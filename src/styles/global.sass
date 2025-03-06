@@ -1,0 +1,28 @@
+body 
+  margin: 0
+  min-height: 100vh
+  font-family: 'Geologica', sans-serif
+  background: linear-gradient(to right, $primary-color, $secondary-color)
+  color: $text-color
+
+.container
+  margin: 0 auto
+  padding: 39px 40px 
+  max-width: calc( #{$contentWidth} + 60px )
+  @media #{$tablet}
+    max-width: calc( #{$tabletContentWidth} + 60px )
+  @media #{$mobile}
+    max-width: $mobileContentWidth
+
+*, *:before, *:after
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-family: 'Geologica', sans-serif
+  text-decoration: none
+  font-weight: 400
+  color: $text-color
+  outline: none
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  -webkit-box-sizing: border-box

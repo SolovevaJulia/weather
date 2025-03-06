@@ -1,0 +1,207 @@
+.weather
+  display: flex
+  flex-direction: column
+  color: white
+
+  &__header
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 12px
+    margin-bottom: 48px
+
+  &__title
+    font-size: 36px
+    font-weight: 600
+    line-height: 130%
+    @media #{$mobile}
+      font-size: 30px
+
+  &__subtitle
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    @media #{$mobile}
+      align-items: flex-start
+    h2
+      font-size: 36px
+      font-weight: 600
+      margin-right: 16px
+      @media #{$mobile}
+        font-size: 28px
+    button
+      border-radius: 50%
+      border: none
+      width: 38px
+      height: 38px
+      padding: 10px
+      background: rgba(233, 233, 243, 0.1)
+      @media #{$mobile}
+        width: 32px
+        height: 32px
+    img
+      width: 18px
+      height: 18px
+      @media #{$mobile}
+        width: 12px
+        height: 12px
+      
+  &__date
+    font-size: 30px
+    font-weight: 500
+    line-height: 120%
+    color: $text-color-gray
+    @media #{$mobile}
+      font-size: 24px
+
+  &__main
+    display: flex
+    gap: 87px
+    margin-bottom: 56px
+    @media #{$tablet}
+      flex-direction: column
+
+  &__current
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 15px
+    @media #{$tablet}
+      justify-content: flex-start
+    @media #{$mobile}
+      flex-direction: column
+
+  &__left
+    display: flex
+    align-items: center
+    gap: 44px
+
+  &__icon img
+    width: 180px
+    height: 180px
+    @media #{$mobile}
+      width: 150px
+      height: 150px
+
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+  &__temp
+    font-size: 100px
+    font-weight: 700
+
+  &__right
+    display: flex
+    flex-direction: column
+    gap: 12px
+
+  &__details
+    font-size: 24px
+    font-weight: 500
+    @media #{$mobile}
+      font-size: 36px
+
+  &__hourly
+    flex: 2
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+  &__hourly-list
+    display: flex
+    flex-direction: column
+    gap: 10px
+    overflow-x: auto
+    padding-bottom: 10px
+
+.weather-hour
+  padding: 13px 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 648px
+  border-bottom: 1px solid rgba(233, 233, 243, 0.1)
+
+  &__time
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    font-size: 18px
+    font-weight: 400
+    @media #{$mobile}
+      font-size: 12px
+
+  &__icon
+    width: 60px
+    height: 60px
+    @media #{$mobile}
+      width: 40px
+      height: 40px
+
+  &__temp
+    font-size: 48px
+    font-weight: 600
+    @media #{$mobile}
+      font-size: 28px
+
+  &__condition
+    font-size: 18px
+    font-weight: 400
+    @media #{$mobile}
+      font-size: 12px
+
+.weather__popular
+  &-list
+    display: flex
+    justify-content: space-between
+    @media #{$tablet}
+      flex-wrap: wrap
+      gap: 37px
+
+.weather-card
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding: 25px
+  background: linear-gradient(to right, $card-bg-main, $card-bg-second)
+  border-radius: 8px
+  width: 100%
+  max-width: 242px
+  min-height: 303px
+  text-align: center
+  border: 1px solid
+  border-image-source: linear-gradient(144.45deg, rgba(255, 255, 255, 0.4) -14.51%, rgba(255, 255, 255, 0) 117.67%)
+  @media #{$laptop}
+    max-width: 270px
+  @media #{$mobile}
+    max-width: unset
+  
+
+  &__city
+    font-size: 26px
+    font-weight: 500
+    @media #{$mobile}
+      font-size: 34px
+
+  &__icon
+    width: 60px
+    height: 60px
+
+  &__temp
+    font-size: 48px
+    font-weight: 600
+
+  &__condition
+    font-size: 18px
+    font-weight: 500
+    @media #{$mobile}
+      font-size: 22px
+
+  &__humidity
+    font-size: 12px
+    @media #{$mobile}
+      font-size: 18px
