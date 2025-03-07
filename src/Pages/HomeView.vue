@@ -143,4 +143,7 @@ onMounted(() => {
   fetchPopularCities();
 });
 watch(selectedCity, fetchWeather);
+
+console.log("API Key:", import.meta.env.VITE_OPENWEATHER_API_KEY);
+
 </script>

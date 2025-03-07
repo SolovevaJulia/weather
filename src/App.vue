@@ -12,6 +12,5 @@ import './styles/main.sass';
 
 const selectedCity = ref('Казань');
 
-// Делаем переменную доступной в других компонентах
 provide('selectedCity', selectedCity);
 </script>

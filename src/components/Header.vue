@@ -35,7 +35,7 @@ const toggleDropdown = () => {
 };
 
 const selectCity = (city: string) => {
-  selectedCity.value = city; // Теперь выбранный город меняется глобально
+  selectedCity.value = city;
   dropdownOpen.value = false;
 };
 
