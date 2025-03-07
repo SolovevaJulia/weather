@@ -101,7 +101,7 @@ npm run deploy
 **Важно:**
 - В `vite.config.ts` должен быть указан корректный `base`:
   ```typescript
-  base: '/ваш-репозиторий/',
+  base: '/weather/',
   ```
 - В настройках репозитория GitHub Pages нужно выбрать ветку `gh-pages`.
 
